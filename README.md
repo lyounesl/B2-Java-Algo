@@ -45,4 +45,10 @@ public int compareTo(Joueur autre) {
 
 #### Question 2.1 : Création du projet B2GNSAlgo21
 
-#### Question 2.2 : 
+#### Question 2.2 : Le résultat de la compilation est le joueur 28, Parker avec 30 victoires.
+
+#### Question 2.3 : //extrait du code
+
+#### Question 2.4 : Création de B2GNSAlgo22
+
+#### Question 2.5 : 
