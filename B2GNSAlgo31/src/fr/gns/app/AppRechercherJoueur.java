@@ -1,10 +1,9 @@
 package fr.gns.app;
 
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.List;
 
-public class AppTrierParNbVictoires {
+public class AppRechercherJoueur {
 
 	public static void main(String[] args) {
 
@@ -25,12 +24,10 @@ public class AppTrierParNbVictoires {
 			System.out.println( joueur ) ;
 		}
 		
-		System.out.println( "\nCelui qui a remporté le moins de victoires :\n" ) ;
-		System.out.println(Collections.min(joueurs));
+		Joueur joueur = new Joueur( 105 , "LUCINA" , "France" , 33 ) ;
 		
-		System.out.println( "\nListe triée des joueurs dans l'ordre croissant :\n" ) ;
-		Collections.sort(joueurs);
-		System.out.println(joueurs);
+		System.out.println( "\nPosition du joueur dans la liste :" ) ;
+		System.out.println( joueurs.indexOf( joueur ) ) ;
 		
 
 	}

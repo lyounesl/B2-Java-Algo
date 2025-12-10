@@ -1,7 +1,7 @@
 package fr.gns.app;
 
 
-public class Joueur implements Comparable<Joueur> {
+public class Joueur {
 	
 	private int numero ;
 	private String nom ;
@@ -58,20 +58,6 @@ public class Joueur implements Comparable<Joueur> {
 	@Override
 	public String toString() {
 		return "Joueur [numero=" + numero + ", nom=" + nom + ", pays=" + pays + ", nbVictoires=" + nbVictoires + "]";
-	}
-
-	@Override
-	public int compareTo(Joueur o) {
-
-		if( this.nbVictoires == o.nbVictoires ) {
-			return 0 ;
-		}
-		else if( this.nbVictoires > o.nbVictoires ) {
-			return 1 ;
-		}
-		else {
-			return -1 ;
-		}
 	}
 
 }

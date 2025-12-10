@@ -1,8 +1,11 @@
 package fr.gns.app;
 
 import java.util.ArrayList;
+import java.util.Collection;
 import java.util.Collections;
+import java.util.Comparator;
 import java.util.List;
+
 
 public class AppTrierParNbVictoires {
 
@@ -25,13 +28,11 @@ public class AppTrierParNbVictoires {
 			System.out.println( joueur ) ;
 		}
 		
-		System.out.println( "\nCelui qui a remporté le moins de victoires :\n" ) ;
-		System.out.println(Collections.min(joueurs));
+		System.out.println( "\nListe triée des joueurs :\n" ) ;
 		
-		System.out.println( "\nListe triée des joueurs dans l'ordre croissant :\n" ) ;
-		Collections.sort(joueurs);
+		Comparator<Joueur> comparateurWin = new ComparateurNbVictoires();
+		Collections.sort(joueurs,comparateurWin);
 		System.out.println(joueurs);
-		
 
 	}
 
